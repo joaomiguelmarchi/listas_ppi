@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+
+        .chat-container {
+            width: 400px;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px 5px 0 0;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            max-height: 70vh;
+        }
+
+        .messages {
+            padding: 10px;
+        }
+
+        .message {
+            margin-bottom: 10px;
+        }
+
+        .sender {
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 3px;
+            display: inline-block;
+            color: #555;
+        }
+
+        .bubble {
+            background-color: #f1f1f1;
+            padding: 8px 10px;
+            border-radius: 5px;
+            max-width: 80%;
+            position: relative;
+            font-size: 14px;
+            line-height: 1.4;
+            color: #333;
+        }
+
+        .received .bubble {
+            background-color: #e3f9e5;
+        }
+
+        .sent .bubble {
+            background-color: #d2efff;
+            margin-left: auto;
+        }
+
+        .time {
+            font-size: 12px;
+            color: #999;
+            margin-top: 5px;
+            text-align: right;
+        }
+
+        .message-input {
+            display: flex;
+            border-top: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        .message-input textarea {
+            flex: 1;
+            resize: none;
+            padding: 5px;
+            font-family: inherit;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            outline: none;
+            min-height: 40px;
+        }
+
+        .message-input button {
+            margin-left: 10px;
+            padding: 5px 12px;
+            font-size: 14px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            transition: background-color 0.3s;
+        }
+
+        .message-input button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="chat-container">
+        <div class="messages">
+            <div class="message received">
+                <div class="sender">Pedro Silva</div>
+                <div class="bubble">
+                    <p>Olá, tudo bem?</p>
+                    <span class="time">00:54</span>
+                </div>
+            </div>
+
+            <div class="message sent">
+                <div class="sender">Eu</div>
+                <div class="bubble">
+                    <p>Estou bem sim, e você?</p>
+                    <span class="time">00:55</span>
+                </div>
+            </div>
+
+            <div class="message received">
+                <div class="sender">Pedro Silva</div>
+                <div class="bubble">
+                    <p>Vamos sair hoje? Sabe conversar e Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                        ducimus.</p>
+                    <span class="time">00:55</span>
+                </div>
+            </div>
+
+            <div class="message sent">
+                <div class="sender">Eu</div>
+                <div class="bubble">
+                    <p>Criatura ......</p>
+                    <span class="time">00:55</span>
+                </div>
+            </div>
+        </div>
+        <div class="message-input">
+            <textarea placeholder="Digite sua mensagem"></textarea>
+            <button>Enviar</button>
+        </div>
+    </div>
+</body>
+
+</html>

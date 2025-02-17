@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 7 - Divs e Box Model</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            display: inline-block;
+            border: 2px solid black;
+        }
+        #box1 {
+            background-color: red;
+            border-radius: 5%;
+        }
+        #box2 {
+            background-color: green;
+            border-top: 4px dashed blue;
+            border-radius: 5% 7% 0 0;
+        }
+        #box3 {
+            background: linear-gradient(to right, orange, yellow);
+        }
+        #box4 {
+            background-color: purple;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 100px;
+            opacity: 0.5;
+            box-shadow: 10px 16px teal;
+        }
+        #box1:hover {
+            background-color: pink;
+        }
+        #box2:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">div-1</div>
+    <div class="box" id="box2">div-2</div>
+    <div class="box" id="box3">div-3</div>
+    <div class="box" id="box4">div-4</div>
+</body>
+</html>

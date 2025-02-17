@@ -1,0 +1,2 @@
+6 - o primeiro vai dar certo porque esta chamando o script depois de gerar todo o HTML.
+Já o segundo vai dar erro porque esta chamado o javascript antes de gerar o HTML, dando erro pois o campo que esta sendo buscado no document não existe.

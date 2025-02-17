@@ -1,0 +1,42 @@
+1: Uma regra CSS é composta por um seletor e um bloco de declarações. Ela define o estilo de um elemento HTML.
+Exemplo:
+p {
+  color: blue;
+  font-size: 18px;
+}
+O seletor é p, que seleciona todos os parágrafos.
+As propriedades são color e font-size.
+Os valores são blue e 18px.
+
+2: Seletores são usados para escolher quais elementos HTML serão estilizados.
+Existem tres tipos de seletores, sao eles:
+Seletores básicos:
+    elemento (ex: p, h1)
+    .classe (ex: .box)
+    #id (ex: #menu)
+Seletores combinados:
+    elemento.classe (ex: div.box)
+    pai > filho (ex: ul > li)
+    adjacente (ex: h1 + p)
+Pseudo-classes e pseudo-elementos:
+    :hover, :active, ::before, ::after
+
+4: O CSS pode ser incluido de 3 formas
+Inline: Usando o atributo style diretamente na tag HTML.
+Internal: Usando a tag <style> dentro do <head> do documento HTML.
+External: Utilizando um arquivo CSS separado e vinculando-o com <link>.
+
+5: 
+O primeiro item (Abacaxi) só tem a regra básica (li {color:red;}) e fica vermelho.
+O item "Melão" possui a classe .fruta, que tem especificidade maior que a tag, ficando cinza.
+"Pera" tem um ID e classe, mas a regra do ID (regra 6) prevalece, tornando-o azul.
+"Uva" é afetado por uma regra que combina ID e classe (#lip3.fruta), resultando em laranja.
+"Maçã" possui erro de atribuição na classe, então só a regra de li é aplicada, ficando vermelha.
+"Carne" com a classe .churras fica verde, pois a regra .churras (regra 2) é mais específica que li.
+"Linguiça" usa o seletor li+li.churras, que tem especificidade ainda maior, ficando preta.
+"Pão de alho" tem a regra com atributo [draggable="true"] associada à classe .churras, ganhando cor magenta.
+
+6: 
+Inline: Alta prioridade, mas difícil de manter.
+Internal: Facilita a customização em uma única página, mas não reutilizável.
+External: Melhor para manutenção e desempenho, pois o navegador faz cache do CSS.

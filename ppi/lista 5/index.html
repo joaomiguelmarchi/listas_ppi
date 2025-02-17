@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista JS</title>
+</head>
+
+<body>
+    <h2>Questao 2</h2>
+    <button onclick="incrementar()">Incrementar</button>
+    <h4 id="resultado">0</h4>
+    <h2>Questao 3</h2>
+    <div>
+        <input type="number" id="valor1">
+        <input type="number" id="valor2">
+        <button onclick="somar()">Somar</button>
+        <h4 id="soma">Resultado 0</h4>
+    </div>
+    <h2>Questao 4</h2>
+    <div>
+        <button onclick="aleatorio()">Numero aleatorio</button>
+        <h4 id="resultado_aleatorio">Resultado 0</h4>
+    </div>
+    <h2>Questao 5</h2>
+    <div>
+        <input type="number" id="minimo">
+        <input type="number" id="maximo">
+        <button onclick="aleatorioComIntervalo()">Numero aleatorio</button>
+        <h4 id="resultado_aleatorio_com_intervalo">Resultado 0</h4>
+    </div>
+    <h2>Questao 8</h2>
+    <div>
+        <input type="number" id="inicio">
+        <input type="number" id="fim">
+        <button onclick="buscarPrimos()">Buscar</button>
+        <h4 id="resultado_numero_primo">Resultado 0</h4>
+    </div>
+    <h2>Questao 9</h2>
+    <div>
+        <input type="text" id="palavra">
+        <button onclick="verificarPalindromo()">Verificar</button>
+        <h4 id="resultado_palindromo"></h4>
+    </div>
+    <h2>Questao 10</h2>
+    <div>
+        <input type="text" id="texto">
+        <button onclick="copiarTexto()">Adicionar</button>
+        <div id="listagem"></div>
+    </div>
+    <h2>Questao 11</h2>
+    <div>
+        <button onclick="sortearNumero()">Sortear Número</button>
+        <ul id="lista_numeros"></ul>
+    </div>
+    <h2>Questao 12</h2>
+    <div>
+        <input type="number" id="inicio2">
+        <input type="number" id="fim2">
+        <button onclick="sortearNumero2()">Sortear Número</button>
+        <ul id="listagem2"></ul>
+    </div>
+    <h2>Questao 13</h2>
+    <button onclick="mudarCor()">Alterar cor de fundo</button>
+    <h2>Questao 14</h2>
+    <style>
+        .container {
+            display: flex;
+        }
+        .quadrado {
+            width: 100px;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            color: white;
+            font-weight: bold;
+            padding: 3px;
+        }
+    </style>
+    <div class="container">
+        <div class="quadrado"></div>
+        <div class="quadrado"></div>
+        <div class="quadrado"></div>
+        <div class="quadrado"></div>
+        <div class="quadrado"></div>
+    </div>
+    <h2>Questao 15</h2>
+    <div id="display"></div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
