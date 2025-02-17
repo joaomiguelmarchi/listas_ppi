@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .appbar {
+            display: flex;
+            align-items: center;
+            background-color: #333;
+            padding-left: 10px;
+            padding-right: 10px;
+            gap: 5px;
+            height: 5%;
+        }
+
+        .bola {
+            width: 15px;
+            height: 15px;
+            background-color: #00bcd4;
+            border-radius: 50%;
+        }
+
+        .layout {
+            display: flex;
+            height: 95%;
+        }
+
+        .navegacao {
+            background-color: #f57c00;
+            width: 25%;
+            min-width: 100px;
+            padding: 20px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .conteudo-container {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .cabecalho {
+            background-color: #03a9f4;
+            padding: 20px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .conteudo {
+            background-color: #673ab7;
+            flex: 1;
+            padding: 20px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .rodape {
+            background-color: #03a9f4;
+            padding: 20px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="appbar">
+            <div class="bola"></div>
+            <div class="bola"></div>
+            <div class="bola"></div>
+        </div>
+        <div class="layout">
+            <aside class="navegacao">NAVEGAÇÃO</aside>
+            <div class="conteudo-container">
+                <header class="cabecalho">CABEÇALHO</header>
+                <section class="conteudo">CONTEÚDO</section>
+                <footer class="rodape">RODAPÉ</footer>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
